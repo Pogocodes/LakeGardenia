@@ -1,0 +1,64 @@
+.main {
+  padding-top: 100px;
+  background-color: var(--color-forest-green);
+  min-height: 100vh;
+}
+
+.gallerySection {
+  padding: 4rem 5% 8rem 5%;
+  color: var(--color-warm-ivory);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.subheading {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  opacity: 0.8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  grid-auto-flow: dense;
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(252, 248, 242, 0.05);
+}
+
+.imageWrapper.tall {
+  grid-row: span 2;
+  aspect-ratio: 3/4;
+}
+
+.imageWrapper.landscape {
+  aspect-ratio: 4/3;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.6s ease-out;
+}
+
+.imageWrapper:hover .image {
+  transform: scale(1.05);
+}

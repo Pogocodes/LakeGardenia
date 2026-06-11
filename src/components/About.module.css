@@ -1,0 +1,56 @@
+.aboutSection {
+  padding: 8rem 5%;
+  background-color: var(--color-warm-ivory);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.textContent {
+  padding-right: 2rem;
+}
+
+.heading {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-forest-green);
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-forest-green);
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .textContent {
+    padding-right: 0;
+  }
+}
