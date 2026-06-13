@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 export default function Footer() {
   const whatsappLink = "https://wa.me/918976655369?text=Hello%20Lake%20Gardenia%20Resort,%20I%20would%20like%20to%20inquire%20about%20a%20stay.";
   const emailLink = "mailto:lakegardenia7@gmail.com";
+  const mapsLink = "https://www.google.com/maps/search/?api=1&query=Lake+Gardenia+Pali+Mahagaon+road+Kumbharghar+Maharashtra+410205";
 
   return (
     <footer className={styles.footer}>
@@ -22,10 +23,10 @@ export default function Footer() {
               <Mail size={18} />
               <span>lakegardenia7@gmail.com</span>
             </a>
-            <div className={styles.contactItem}>
+            <a href={mapsLink} target="_blank" rel="noopener noreferrer" className={styles.contactItem}>
               <MapPin size={18} />
-              <span>Pali, Maharashtra</span>
-            </div>
+              <span>Lake Gardenia — Pali, Maharashtra</span>
+            </a>
           </div>
         </div>
         <div className={styles.bottomSection}>
