@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "/images/WhatsApp Image 2026-06-10 at 2.32.05 PM.jpeg",
+    image: "/images/WhatsApp Image 2026-06-10 at 2.30.24 PM.jpeg",
     title: "Lake Gardenia",
     tagline: "Pali, Maharashtra",
     description:

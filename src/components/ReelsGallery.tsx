@@ -7,27 +7,19 @@ import styles from "./ReelsGallery.module.css";
 const reels = [
   {
     src: "/videos/reel-1.mp4",
-    caption: "Morning lakeside yoga and sunrise reflections.",
+    caption: "Lakeside serenity — where every morning feels like a dream.",
   },
   {
     src: "/videos/reel-2.mp4",
-    caption: "Poolside moments with soft luxury.",
+    caption: "Golden hour poolside, luxury in every detail.",
   },
   {
     src: "/videos/reel-3.mp4",
-    caption: "Twilight dining beneath the stars.",
+    caption: "Wandering through nature's own masterpiece.",
   },
   {
     src: "/videos/reel-4.mp4",
-    caption: "Walking the garden paths toward quiet spaces.",
-  },
-  {
-    src: "/videos/reel-5.mp4",
-    caption: "Aerial views reveal the resort’s natural setting.",
-  },
-  {
-    src: "/videos/reel-6.mp4",
-    caption: "Rain dance and outdoor water moments.",
+    caption: "Evenings that linger — sunset views at Lake Gardenia.",
   },
 ];
 

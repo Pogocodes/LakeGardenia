@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
@@ -30,7 +31,14 @@ export default function Navbar() {
     >
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo}>
-          Lake Gardenia
+          <Image
+            src="/images/lg-logo.png"
+            alt="Lake Gardenia - Cherish Your Stay"
+            width={180}
+            height={90}
+            className={styles.logoImage}
+            priority
+          />
         </Link>
         <div className={styles.navLinks}>
           <Link href="/gallery" className={styles.navLink}>
